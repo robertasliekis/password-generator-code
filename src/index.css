@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+ul li {
+  list-style-type: none;
+  display: block;
+}
+
+:root {
+  --global-color-blue: rgb(104, 154, 201);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+textarea,
+button,
+input {
+  font-family: "Roboto", sans-serif;
+  -webkit-appearance: none;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+}
+
+input,
+select {
+  outline: none;
+}
+
+div {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.website-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: black;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 1140px;
+  height: 100%;
+}
+
+.header .container .logo {
+  width: 180px;
+  height: 30px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./images/logo.png");
+  cursor: pointer;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding-bottom: 87px;
+}
+
+.content .learn-more-container {
+  padding: 20px 0;
+  color: #9e9fa4;
+}
+
+.content .learn-more-container a {
+  margin-left: 5px;
+  color: #9e9fa4;
+  font-weight: 700;
+}
+
+.content .password-generator-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 1160px;
+  background-color: black;
+  color: white;
+  padding-top: 56px;
+  padding-bottom: 37px;
+  margin-bottom: 72px;
+}
+
+.content .password-generator-container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.content .password-generator-container p {
+  margin-bottom: 8px;
+}
+
+.content .password-generator-container p:nth-child(3) {
+  margin-bottom: 24px;
+}
+
+.content .password-generator-container .output-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 700px;
+  height: 50px;
+  margin-bottom: 24px;
+}
+
+.content .password-generator-container .output-container .output {
+  position: relative;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 25px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.content .password-generator-container .output-container .output .btn-generate {
+  position: absolute;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  top: 50%;
+  right: 25px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./images/generate.png");
+  cursor: pointer;
+}
+
+.content .password-generator-container .output-container .btn-copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 190px;
+  height: 100%;
+  background-color: #09a858;
+}
+
+.content .password-generator-container .options-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .password-generator-container .options-container .checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 26px;
+}
+
+.content .password-generator-container .options-container .checkbox-container .checkbox-field {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  margin-right: 9px;
+  cursor: pointer;
+}
+
+.content .password-generator-container .options-container .checkbox-container .checkbox-field .icon {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #0084ff;
+  color: white;
+}
+
+.content .password-generator-container .options-container .checkbox-container p {
+  margin-top: 5px;
+}
+
+.content .password-generator-container .options-container .checkbox-container:last-child {
+  margin-right: 0;
+}
+
+.content .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 953px;
+}
+
+.content .info-container .image {
+  height: 225px;
+  min-width: 225px;
+  background-position: center;
+  background-size: contain;
+}
+
+.content .info-container .text-block {
+  max-width: 560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.content .info-container .text-block h2 {
+  margin-top: 47px;
+  font-size: 31px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.content .info-container .text-block p {
+  line-height: 26px;
+  width: 560px;
+  margin-bottom: 15px;
+}
+
+.content .info-container .text-block p span {
+  white-space: nowrap;
+  margin: 0 5px;
+}
+
+.content .info-container .text-block p:last-child {
+  margin: 0;
+}
+
+.content .about-container {
+  margin-bottom: 64px;
+}
+
+.content .about-container .image {
+  background-image: url("./images/security.png");
+}
+
+.content .how-it-works-container .image {
+  background-image: url("./images/speed.png");
+}
+
+.content .how-it-works-container .text-block {
+  min-width: 637px;
+}
+
+.content .how-it-works-container .text-block h2 {
+  margin-top: 24px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    width: 100%;
+  }
+  .header .container {
+    padding: 0 40px;
+    width: 100%;
+  }
+  .content .learn-more-container {
+    padding: 20px 40px;
+  }
+  .content .password-generator-container {
+    width: 100%;
+  }
+  .content .info-container {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content .info-container .text-block {
+    max-width: 450px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header .container {
+    padding: 0 20px;
+  }
+  .content {
+    padding-bottom: 0;
+    width: 100%;
+  }
+  .content .learn-more-container {
+    padding: 20px;
+    text-align: justify;
+  }
+  .content .password-generator-container {
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  .content .password-generator-container h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .content .password-generator-container p {
+    text-align: center;
+  }
+  .content .password-generator-container .output-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
+    height: 100px;
+  }
+  .content .password-generator-container .output-container .output {
+    width: 100%;
+  }
+  .content .password-generator-container .output-container .btn-copy {
+    width: 100%;
+  }
+  .content .password-generator-container .options-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content .password-generator-container .options-container .checkbox-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 50%;
+    margin: 0;
+  }
+  .content .info-container {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin: 0;
+  }
+  .content .info-container .text-block {
+    width: 100%;
+  }
+  .content .info-container .text-block h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .content .info-container .text-block p {
+    text-align: justify;
+    width: 100%;
+  }
+  .content .about-container .image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .content .how-it-works-container {
+    width: 100%;
+  }
+  .content .how-it-works-container .text-block {
+    min-width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
