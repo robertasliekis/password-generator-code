@@ -1,7 +1,5 @@
-# Scripts for running application
-
+Scripts for running application:
 npm install
-
 npm start
 
 
