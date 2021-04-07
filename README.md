@@ -1,7 +1,13 @@
-Scripts for running application:
+# Password generator
 
-npm install
+Website to generate strong random password with symbols of your choice.
 
-npm start
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm install`
+
+### `npm start`
 
 
