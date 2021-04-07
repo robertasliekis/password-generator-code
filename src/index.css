@@ -152,13 +152,19 @@ body {
 }
 
 .header .container .logo {
-  width: 180px;
-  height: 30px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("./images/logo.png");
   cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.header .container .logo .icon {
+  margin-right: 10px;
+  font-size: 30px;
 }
 
 .content {
@@ -447,6 +453,7 @@ body {
 .content .info-container .text-block p {
   line-height: 26px;
   width: 560px;
+  text-align: justify;
   margin-bottom: 15px;
 }
 

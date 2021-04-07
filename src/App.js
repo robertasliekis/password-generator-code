@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faUnlockAlt } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [lowerCaseChecked, setLowerCaseChecked] = useState(true);
@@ -49,7 +49,10 @@ function App() {
     <div className="website-wrapper">
       <div className="header">
         <div className="container">
-          <div className="logo"></div>
+          <div className="logo">
+            <FontAwesomeIcon icon={faUnlockAlt} className="icon" />
+            Password generator
+          </div>
         </div>
       </div>
       <div className="content">
@@ -71,29 +74,21 @@ function App() {
             </div>
           </div>
           <div className="options-container">
-            <div className="checkbox-container">
-              <div className="checkbox-field" onClick={() => setLowerCaseChecked(!lowerCaseChecked)}>
-                {lowerCaseChecked ? <FontAwesomeIcon icon={faCheck} className="icon" /> : null}
-              </div>
+            <div className="checkbox-container" onClick={() => setLowerCaseChecked(!lowerCaseChecked)}>
+              <div className="checkbox-field">{lowerCaseChecked ? <FontAwesomeIcon icon={faCheck} className="icon" /> : null}</div>
               <p>lower case</p>
             </div>
-            <div className="checkbox-container">
-              <div className="checkbox-field" onClick={() => setUpperCaseChecked(!upperCaseChecked)}>
-                {upperCaseChecked ? <FontAwesomeIcon icon={faCheck} className="icon" /> : null}
-              </div>
+            <div className="checkbox-container" onClick={() => setUpperCaseChecked(!upperCaseChecked)}>
+              <div className="checkbox-field">{upperCaseChecked ? <FontAwesomeIcon icon={faCheck} className="icon" /> : null}</div>
               <p>upper case</p>
             </div>
 
-            <div className="checkbox-container">
-              <div className="checkbox-field" onClick={() => setSpecialSymbolsChecked(!specialSymbolsChecked)}>
-                {specialSymbolsChecked ? <FontAwesomeIcon icon={faCheck} className="icon" /> : null}
-              </div>
+            <div className="checkbox-container" onClick={() => setSpecialSymbolsChecked(!specialSymbolsChecked)}>
+              <div className="checkbox-field">{specialSymbolsChecked ? <FontAwesomeIcon icon={faCheck} className="icon" /> : null}</div>
               <p>special symbols</p>
             </div>
-            <div className="checkbox-container">
-              <div className="checkbox-field" onClick={() => setNumberChecked(!numbersChecked)}>
-                {numbersChecked ? <FontAwesomeIcon icon={faCheck} className="icon" /> : null}
-              </div>
+            <div className="checkbox-container" onClick={() => setNumberChecked(!numbersChecked)}>
+              <div className="checkbox-field">{numbersChecked ? <FontAwesomeIcon icon={faCheck} className="icon" /> : null}</div>
               <p>numbers</p>
             </div>
           </div>
